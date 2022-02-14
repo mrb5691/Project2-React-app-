@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [Github link](https://github.com/mrb5691/React-App.git)
+- [Github link](https://github.com/mrb5691/Project2-React-app-.git)
 - [add your deployment link]()
 
 ## Project Description
