@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router": "^6.2.1",
@@ -16,6 +17,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "Homepage": "https://mrb5691.github.io/project2-react-app-",
+    "redeploy": "npm run build",
+    "Deploy": "gh-page -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
