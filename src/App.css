@@ -1,38 +1,64 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.App nav img{
+  height: auto;
+  width: 200px;
+}
+.App nav Link{
+  font-style: bold;
+  font-size: 100px;
+}
+.SingleCard{
+  position: fixed;
+}
+.backImg{
+  height: 100px;
+  width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.PricedCards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AllCards{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: bold;
+}
+.display{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.BannedCards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: bold;
+}
+
+.CardInfo img{
+  height: 300px;
+  width: auto;
+}
+
+.CardDeck{
+  display: flex;
+}
+.CardDeck div{
+  padding-right: 20px;
 }

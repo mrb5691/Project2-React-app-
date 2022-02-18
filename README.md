@@ -62,12 +62,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Displaying Cards | H | 1hrs| hrs | hrs |
-| Work on Routes | H | 10hrs| hrs | hrs |
-| Search function | H | 3hrs| hrs | hrs |
-| Styling | H | 4hrs| hrs | hrs |
-| deck functionality | H | 6hrs| hrs | hrs |
-| hamburger menu | H | 1hrs| hrs | hrs |
+| Displaying Cards | H | 1hrs| 1hrs | 1hrs |
+| Work on Routes | H | 10hrs| 12hrs | 12hrs |
+| Search function | H | 3hrs| 4hrs | 4hrs |
+| Styling | H | 4hrs| 2hrs | 2hrs |
+| deck functionality | H | 6hrs| 6hrs | 6hrs |
+| hamburger menu | H | 1hrs| 0hrs | 0hrs |
 | Total | H | 25hrs| hrs | hrs |
 
 ## Additional Libraries
@@ -75,15 +75,26 @@ Time frames are also key in the development cycle.  You have limited time to cod
  React Router (For functionality)
   www.fontawesome.com (for icons)
  www.pexels.com (for images)
+ www.deviantart.com (yugioh logo and cardback images)
  https://db.ygoprodeck.com/api-guide/ (for yugioh api)
  
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const makeAPICall = () => {
+    fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?name=${props.name}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setCard(data.data[0]);
+      });
+  };
+
+  useEffect(() => {
+    makeAPICall();
+  }, [props.name]);
+
+
+  let cardInfo = "";
+  const url = "https://storage.googleapis.com/ygoprodeck.com/pics/"+card.id+".jpg";
 ```
