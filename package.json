@@ -1,5 +1,6 @@
 {
   "name": "yugioh",
+  "homepage": "https://mrb5691.github.io/project2-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,9 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "Homepage": "https://mrb5691.github.io/project2-react-app-",
     "redeploy": "npm run build",
-    "Deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
